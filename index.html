@@ -33,6 +33,12 @@
      const Google = [
             'opening google sir'
      ];
+     const Facebook = [
+            'opening Facebook sir'
+     ];
+     const ERStech = [
+            'opening ERS Tech sir'
+     ];
         const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
         const recognition =  new SpeechRecognition();
 
@@ -71,6 +77,18 @@
                     Google[Math.floor(Math.random()* Google.length)];
                 speech.text = finalText; 
                 window.open('https://www.google.com/')
+                }
+                else if(message.includes('Facebook')){
+                const finalText = 
+                Facebook[Math.floor(Math.random()* Facebook.length)];
+                speech.text = finalText; 
+                window.open('https://www.facebook.com/')
+                }
+                else if(message.includes('ERStech')){
+                const finalText = 
+                ERStech[Math.floor(Math.random()* ERStech.length)];
+                speech.text = finalText; 
+                window.open('https://erstech.org/')
                 }
             speech.volume = 1;
             speech.rate = 1.1;
